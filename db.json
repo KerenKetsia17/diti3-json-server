@@ -1,0 +1,67 @@
+{
+  "employes": [
+    {
+      "id": 5,
+      "nom": "Abang",
+      "prenom": "Kéren Ketsia",
+      "salaire": 30000,
+      "idS": 3
+    },
+    {
+      "id": 7,
+      "nom": "Laidéra",
+      "prenom": "Yverline",
+      "salaire": 20000,
+      "idS": 3
+    },
+    {
+      "id": 12,
+      "nom": "Louemba",
+      "prenom": "Celeste",
+      "salaire": 300000,
+      "idS": 3
+    },
+    {
+      "id": 14,
+      "nom": "guys",
+      "prenom": "Yvan",
+      "salaire": 500000,
+      "idS": 2
+    },
+    {
+      "id": 15,
+      "nom": "Abang",
+      "prenom": "Keren",
+      "salaire": 100000,
+      "idS": 1
+    },
+    {
+      "id": 22,
+      "nom": "TATA",
+      "prenom": "TATA",
+      "salaire": 3,
+      "idS": 3
+    },
+    {
+      "id": 24,
+      "nom": "toto",
+      "prenom": "toto",
+      "salaire": 123,
+      "idS": 1
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "nomS": "Developpeur"
+    },
+    {
+      "id": 2,
+      "nomS": "Programmeur"
+    },
+    {
+      "id": 3,
+      "nomS": "Infographie"
+    }
+  ]
+}

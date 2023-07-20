@@ -1,0 +1,51 @@
+<div class=" bg-dark justify-content-between" >
+     
+  <div class="container text-center" >
+  
+      <div class="search mt-5">
+        <span style="font-size: 30px; color:white;">rechercher par: </span>
+        
+        <input type="text" class="mt- mb-4 " style="background-color: rgb(225, 225, 223);  " placeholder="Search" [(ngModel)]="searchtext"/>
+        
+        <a routerLink="/employe/add" class="btn btn-outline-success" style="margin-left:40%;">Ajouter</a>
+
+      </div>
+     
+
+  
+      <div class="mt-4 mb-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(222, 24, 64); font-size: 50px; " >
+          Liste des employés
+      </div>
+  
+      
+      
+      <div style="width: 1200px; justify-content: center;">
+          <table class="table table-striped text-center">
+              <thead style="background-color:rgb(219, 231, 223)">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Prénom</th>
+                  <th scope="col">Salaire</th>
+                  <th scope="col">Service</th>
+                  <th scope="col" colspan="2">Action</th>
+                </tr>
+              </thead>
+              <tbody style="color: rgb(244, 243, 242); " >
+                <tr *ngFor="let e of getfilteredEmployes()">
+                  <th scope="row">{{ e.id }}</th>
+                  <td>{{ e.nom | uppercase }}</td>
+                  <td>{{ e.prenom | titlecase }}</td>
+                  <td>{{ e.salaire }}</td>
+                  <td>{{ getServiceName(e.idS) }}</td>
+                  <td>
+                      <a [routerLink]="['/employe/edit', e.id]" class="btn btn-outline-warning mr-3">Modifier</a>
+                      <a (click)="delete(e.id)" class="btn btn-outline-danger">Supprimer</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+  </div>
+  
+</div>
